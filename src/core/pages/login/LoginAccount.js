@@ -41,7 +41,8 @@ class LoginAccount extends Component {
     }
     onConfirmAuth = () => {
         this.setState({ authSuccess: false });
-        setTimeout(() => document.location.href = '/dashboard/user/profile', 1000)
+        this.props.history.push('/dashboard/user/profile')
+        //setTimeout(() => document.location.href = '/dashboard/user/profile', 1000)
     }
     render() {
         return (
