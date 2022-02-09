@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const DOMAIN = 'http://localhost:4000';
+export const DOMAIN = 'https://tienda-stripe.herokuapp.com/';
 export const userSession = JSON.parse(window.sessionStorage.getItem('userSession'));
 export const authorization = userSession === null ? '' : userSession.token;
 export const HTTP_OPTIONS = {
